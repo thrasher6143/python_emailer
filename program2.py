@@ -5,7 +5,7 @@ from contact_getter import get_contacts
 
 port = 465
 smtp_sever = 'smtp.gmail.com'
-sender_email = 'ohdeeritsjon123@gmail.com'
+sender_email = input('Enter gmail account: ')
 receivers_name, receivers_email = get_contacts('files/contacts.txt')
 message = read_template('files/message.txt')
 password = input('Pass it in: ')
